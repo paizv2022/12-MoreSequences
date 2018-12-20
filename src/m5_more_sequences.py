@@ -299,7 +299,7 @@ def contains_an_a(s):
       :rtype: bool
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #     The testing code is already written for you (above).
     #
     ###########################################################################
@@ -312,6 +312,10 @@ def contains_an_a(s):
     #   Use an explicit loop, as you have done in the other problems.
     #   No fair using the   count   or   find   string methods.
     # -------------------------------------------------------------------------
+    for k in range(len(s)):
+        if s[k] == 'a':
+            return True
+    return False
 
 
 # -----------------------------------------------------------------------------
